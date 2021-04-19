@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="bili-banner" style="" data-v-cd8268ae="">
+        <div data-v-66241fcf="" data-v-cd8268ae="" class="animated-banner">
+            <div class="layer"><img src="./images/1.png" data-height="360" data-width="9666" height="209" width="5612" style="transform: scale(1) translate(0px, -17.4194px) rotate(0deg); opacity: 1;"></div>
+            <div class="layer"><img src="./images/2.png" data-height="360" data-width="9666" height="209" width="5612" style="transform: scale(1) translate(1277.42px, 0px) rotate(0deg); opacity: 1;"></div>
+            <div class="layer"><img src="./images/3.png" data-height="360" data-width="3523" height="188" width="1841" style="transform: scale(1) translate(783.871px, 0px) rotate(0deg); opacity: 1;"></div>
+            <div class="layer"><img src="./images/4.png" data-height="360" data-width="2938" height="204" width="1671" style="transform: scale(1) translate(-739.742px, 0px) rotate(0deg); opacity: 1;"></div>
+            <div class="layer"><img src="./images/5.png" data-height="139" data-width="556" height="72" width="290" style="transform: scale(1) translate(705.484px, 52.2581px) rotate(0deg); opacity: 1;"></div>
+            <div class="layer"><img src="./images/6.png" data-height="302" data-width="734" height="98" width="238" style="transform: scale(1) translate(292.645px, 42.271px) rotate(0deg); opacity: 0;"></div>
+            <div class="layer"><img src="./images/7.png" data-height="180" data-width="1757" height="146" width="1428" style="transform: scale(1) translate(130.065px, 16.2581px) rotate(0deg); opacity: 1;"></div>
+            <div class="layer"><img src="./images/8.png" data-height="116" data-width="1757" height="94" width="1428" style="transform: scale(1) translate(-406.452px, 56.9032px) rotate(0deg); opacity: 1;"></div>
+            <div class="layer"><img src="./images/9.png" data-height="346" data-width="497" height="160" width="230" style="transform: scale(1) translate(-278.71px, 18.5806px) rotate(0deg); opacity: 0;"></div>
+            <div class="layer"><img src="./images/10.png" data-height="256" data-width="146" height="118" width="67" style="transform: scale(1) translate(-394.839px, 37.1613px) rotate(0deg); opacity: 0;"></div>
+            <div class="layer"><img src="./images/11.png" data-height="254" data-width="602" height="132" width="314" style="transform: scale(1) translate(-104.516px, 15.6774px) rotate(0deg); opacity: 1;"></div>
+            <div class="layer"><img src="./images/12.png" data-height="360" data-width="4277" height="209" width="2483" style="transform: scale(1) translate(116.129px, 0px) rotate(0deg); opacity: 1;"></div>
+            <div class="layer"><img src="./images/13.png" data-height="327" data-width="933" height="170" width="487" style="transform: scale(1) translate(250.839px, 15.6774px) rotate(0deg); opacity: 1;"></div>
+            <div class="layer"><img src="./images/14.png" data-height="353" data-width="740" height="245" width="515" style="transform: scale(1) translate(2438.71px, 0px) rotate(0deg); filter: blur(2px); opacity: 1;"></div>
+            <div class="layer"><img src="./images/15.png" data-height="360" data-width="1916" height="209" width="1112" style="transform: scale(1) translate(-1161.29px, 0px) rotate(0deg); filter: blur(1px); opacity: 1;"></div>
+            <canvas width="1903" height="180" style="position: absolute; top: 0px; left: 0px;" id='canvas'></canvas>
+        </div>
+    </div>
+</body>
+
+<script src='./js/banner.js'></script>
+<script src='./js/canvas.js'></script>
+<script>
+    let timer = null
+    window.onload = () => {
+        loading()
+    }
+
+    function start() {
+        timer = setInterval(begin, 1000 / 80)
+    }
+
+    function begin() {
+        ctx.clearRect(0, 0, sw, sh)
+        createFlower()
+        allDraw()
+    }
+</script>
+
+</html>
