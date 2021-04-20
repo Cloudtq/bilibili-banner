@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="view">
+            <img src="./images/bilibili-winter-view-1.webp" class="morning" alt="" />
+            <img src="./images/bilibili-winter-view-2.webp" class="afternoon" alt="" />
+            <video autoplay loop muted class="evening">
+          <source
+            src="./images/bilibili-winter-view-3.webm"
+            type="video/webm"
+          />
+        </video>
+            <img src="./images/bilibili-winter-view-3-snow.png" class="window-cover" alt="" />
+        </div>
+
+        <div class="tree">
+            <img src="./images/bilibili-winter-tree-1.webp" class="morning" alt="" />
+            <img src="./images/bilibili-winter-tree-2.webp" class="afternoon" alt="" />
+            <img src="./images/bilibili-winter-tree-3.webp" class="evening" alt="" />
+        </div>
+        <canvas width="1903" height="160" style="position: absolute; top: 0px; left: 0px" id="canvas"></canvas>
+    </header>
+</body>
+<script src="./js/banner.js"></script>
+<script src="./js/canvas.js"></script>
+
+</html>
